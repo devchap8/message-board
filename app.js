@@ -3,6 +3,16 @@ const path = require("node:path");
 const app = express();
 const PORT = 3000;
 
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
+const indexRouter = require("./routes/indexRouter");
+
+
+app.use('/', indexRouter);
+app.use((req, res) => {
+    res.status(404).send("404 - Page not found");
+});
 
 
 app.listen(PORT, (err) => {
