@@ -1,0 +1,12 @@
+<html>
+    <%- include('head', {title: "Mini Messageboard"}) %>
+
+    <body>
+        <%- include('nav') %>
+        <% for(msg of messages) { %>
+            <%- include('message', {msg}) %>
+        <% } %>
+    </body>
+    
+
+</html>

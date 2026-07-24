@@ -1,12 +1,26 @@
 const { Router } = require("express");
 const indexRouter = Router();
 
+const messages = [
+  {
+    text: "Hi there!",
+    user: "Amando",
+    added: new Date()
+  },
+  {
+    text: "Hello World!",
+    user: "Charles",
+    added: new Date()
+  }
+];
+
+
 indexRouter.get('/', (req, res) => {
-    res.send("Index Page Here");
+    res.render("index", {messages});
 })
 
-indexRouter.get('/about', (req, res) => {
-    res.send("About Page Here");
+indexRouter.get('/new', (req, res) => {
+    res.send("Add a New Message Here");
 })
 
 module.exports = indexRouter;
