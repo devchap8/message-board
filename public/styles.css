@@ -1,5 +1,8 @@
 :root {
-    --main-bg: #1e293b
+    --main-bg: #1e293b;
+    --msg-bg: #334155;
+    --msg-text: #e2e8f0;
+    --username-color: #67e8f9;
 }
 
 * {
@@ -45,6 +48,38 @@ nav {
     height: 2px;
     width: 100%;
     margin: -0.5rem 0 0.5rem 0;
+}
+
+/* Homepage */
+
+.msg-container {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.msg {
+    background-color: var(--msg-bg);
+    padding: .75rem;
+    font-size: 1.5rem;
+    color: var(--msg-text);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.msg-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.msg-user {
+    font-weight: bold;
+    color: var(--username-color);
+}
+
+.msg-added {
+    font-size: 1rem;
 }
 
 /* General Layout */

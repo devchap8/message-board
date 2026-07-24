@@ -3,10 +3,10 @@
 
     <body>
         <%- include('nav') %>
-        <% for(msg of messages) { %>
-            <%- include('message', {msg}) %>
-        <% } %>
+        <main class="msg-container">
+            <% for(msg of messages) { %>
+                <%- include('message', {msg}) %>
+            <% } %>
+        </main>
     </body>
-    
-
 </html>
