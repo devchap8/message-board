@@ -20,7 +20,7 @@ indexRouter.get('/', (req, res) => {
 })
 
 indexRouter.get('/new', (req, res) => {
-    res.send("Add a New Message Here");
+    res.render('form');
 })
 
 module.exports = indexRouter;

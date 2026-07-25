@@ -1,0 +1,23 @@
+<html>
+    <%- include('head', {title: "Add New Message"}) %>
+
+    <body>
+        <%- include('nav') %>
+        
+        <form method="POST" action="/new">
+
+            <h2 class="new-header">New Message</h2>
+            <div class="form-sect">
+                <label for="form-name"> Name </label>
+                <input type="text" name="form-name" id="form-name" placeholder="John">
+            </div>
+            <div class="form-sect">
+                <label for="form-text"> Message </label>
+                <textarea name="form-text" id="form-text" rows="5" placeholder="Your message..." class="form-text"></textarea>    
+            </div>
+            <button type="submit">Add Message</button>
+      
+        </form>
+
+    </body>
+</html>
