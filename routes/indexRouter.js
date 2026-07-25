@@ -23,4 +23,13 @@ indexRouter.get('/new', (req, res) => {
     res.render('form');
 })
 
+indexRouter.post('/new', (req, res) => {
+    messages.push({
+        text: req.body['form-text'],
+        user: req.body['form-name'], 
+        added: new Date().toLocaleString('en-US')
+    })
+    res.render('index', {messages});
+})
+
 module.exports = indexRouter;
