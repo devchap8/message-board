@@ -3,7 +3,23 @@
     <body>
         <%- include('nav') %>
         <main class="msg-info-screen">
-            
+            <h2 class="msg-info-header">Message Info</h2>
+            <div class="msg-info-sect">
+                <div class="msg-info-label">User</div>
+                <div class="msg-info-item"><%= msg.user %></div>
+            </div>
+            <div class="msg-info-sect">
+                <div class="msg-info-label">Timestamp</div>
+                <div class="msg-info-item"><%= msg.added %></div>
+            </div>
+            <div class="msg-info-sect">
+                <div class="msg-info-label">Message</div>
+                <div class="msg-info-item"><%= msg.text %></div>
+            </div>
+            <div class="msg-info-sect">
+                <div class="msg-info-label">Message ID</div>
+                <div class="msg-info-item"><%= msg.id %></div>
+            </div>
         </main>
     </body>
 </html>

@@ -98,7 +98,7 @@ nav {
     font-size: 1rem;
 }
 
-.msg-open {
+.msg-open, .add-msg-btn {
     font-size: medium;
     padding: .25rem .5rem;
     border: none;
@@ -110,13 +110,18 @@ nav {
     text-decoration: none;
 }
 
-.msg-open:hover {
+.msg-open:hover, .add-msg-btn:hover {
     background-color: var(--msg-text);
 }
 
-/* Form Page */
+.add-msg-btn {
+    width: 30%;
+    margin: auto;
+}
 
-form {
+/* Form Page, Message Info Screen */
+
+form, .msg-info-screen {
     margin-top: 1rem;
     background-color: var(--msg-bg);
     max-width: 1000px;
@@ -134,16 +139,16 @@ form {
     }
 }
 
-.new-header {
+.new-header, .msg-info-header {
     text-align: center;
     font-size: xx-large;
     color: white;
 }
 
-.form-sect {
+.form-sect, .msg-info-sect {
     display: flex;
     flex-direction: column;
-    color: var(--msg-text);
+    color: var(--btn-bg);
 }
 
 input[type="text"] {
@@ -153,5 +158,15 @@ input[type="text"] {
 textarea {
     resize: vertical;
     padding: .3rem;
+}
+
+.msg-info-sect {
+    gap: .25rem;
+    color: var(--btn-bg);
+}
+
+.msg-info-item {
+    font-size: large;
+    color: white;
 }
 
