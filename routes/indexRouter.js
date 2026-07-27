@@ -29,7 +29,7 @@ indexRouter.post('/new', (req, res) => {
         user: req.body['form-name'], 
         added: new Date().toLocaleString('en-US')
     })
-    res.render('index', {messages});
+    res.redirect('/');
 })
 
 module.exports = indexRouter;

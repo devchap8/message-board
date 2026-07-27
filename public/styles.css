@@ -3,6 +3,7 @@
     --msg-bg: #334155;
     --msg-text: #e2e8f0;
     --username-color: #67e8f9;
+    --btn-bg: #94a3b8;
 }
 
 * {
@@ -78,20 +79,39 @@ nav {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    overflow-wrap: break-word;
 }
 
 .msg-info {
     display: flex;
-    justify-content: space-between;
+    gap: .75rem;
+    /* align-items: baseline; */
 }
 
 .msg-user {
     font-weight: bold;
     color: var(--username-color);
+    margin-right: auto;
 }
 
 .msg-added {
     font-size: 1rem;
+}
+
+.msg-open {
+    font-size: medium;
+    padding: .25rem .5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--btn-bg);
+    cursor: pointer;
+    color: var(--main-bg);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.msg-open:hover {
+    background-color: var(--msg-text);
 }
 
 /* Form Page */
