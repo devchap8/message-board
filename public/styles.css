@@ -170,3 +170,17 @@ textarea {
     color: white;
 }
 
+/* 404 Page */
+
+.four-main {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four-text {
+    font-size: 2rem;
+    color: var(--msg-text);
+}
+

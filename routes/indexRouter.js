@@ -38,7 +38,7 @@ indexRouter.post('/new', (req, res) => {
 indexRouter.get('/info/:id', (req, res, next) => {
     const msg = messages.find(m => m.id === req.params.id);
     if(msg) res.render('msg-info', {msg});
-    next();
+    else next();
 })
 
 module.exports = indexRouter;
